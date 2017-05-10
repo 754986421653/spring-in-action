@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+war {
+	baseName = 'root'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	def springVersion = '4.3.8.RELEASE'
+	compile "org.springframework:spring-core:$springVersion"
+	compile "org.springframework:spring-context:$springVersion"
+	compile "org.springframework:spring-web:$springVersion"
+	compile "org.springframework:spring-webmvc:$springVersion"
+	compile 'javax.servlet:javax.servlet-api:3.0.1'
+	compile 'javax.servlet:jstl:1.2'
+
+	testCompile "org.springframework:spring-test:$springVersion"
+	testCompile 'junit:junit:4.12'
+}
