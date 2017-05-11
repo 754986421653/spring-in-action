@@ -10,7 +10,7 @@
 	<h1>List of spittles</h1>
 	<ul>
 		<c:forEach items="${spittleList}" var="spittle">
-			<li id="spittle_<c:out value='spittle.id'>">
+			<li id="spittle_<c:out value='spittle.id' />">
 				<div class="spittleMessage">
 					<c:out value="${spittle.message}" />
 				</div>
