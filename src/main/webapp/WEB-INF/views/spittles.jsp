@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/public/css/style.css' />">
 </head>
 <body>
-	<h1>List of spittles</h1>
+	<h1>Recent spittles</h1>
 	<ul>
 		<c:forEach items="${spittleList}" var="spittle">
 			<li id="spittle_<c:out value='spittle.id' />">
